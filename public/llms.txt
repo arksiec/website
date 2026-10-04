@@ -1,0 +1,34 @@
+# ARKS Integrated Engineering Consultancy LLP (ARKS IEC)
+
+> Multidisciplinary Engineering Consultancy for Power, Civil, Infrastructure, MEPF, and Project Management.
+
+## Overview
+ARKS Integrated Engineering Consultancy LLP (ARKS IEC) is a founder-led engineering consultancy firm based in Nagercoil, Tamil Nadu, India. With over 25 years of combined senior leadership experience across international power, infrastructure, and building developments, ARKS IEC provides a single-window, end-to-end engineering platform covering Civil, Electrical (HV/LV/EHV), MEPF systems, and Project Management Consultancy (PMC).
+
+## Core Engineering Disciplines
+- **Civil & Structural Engineering**: Industrial foundation design, structural steel framing, commercial building layouts, load-bearing calculations, site planning, and civil infrastructure engineering.
+- **Electrical HV / LV / EHV Engineering**: Substation design (LV, HV, EHV), grid power interconnections, transmission line structures, switchyards, relay protection and control schematics, solar integration, and smart grid systems.
+- **MEPF Systems**: HVAC air distribution, fire detection and suppression, plumbing arrays, electrical building services, and computational automation.
+- **Project Management Consultancy (PMC)**: Milestone PMC operations, feasibility studies, vendor bid evaluations, QA/QC audits, site management, and commissioning handover.
+
+## Leadership & Partners
+- **Suresh Rajan**: Founder & Managing Director
+- **Sree Krishna Kumar**: Co-Founder & Technical Director
+- **Sundaram Chandra**: Partner
+
+## Design Codes & Compliance Standards
+All engineering calculations and construction documentation conform strictly to global design codes including IEC, IEEE, IS, BS, NFPA, and NBC.
+
+## Official Contact & Coordinates
+- **Registered Office**: Nagercoil, Tamil Nadu, India
+- **Official Email**: info@arksiec.com
+- **Phone Lines**: +91 87542 28580 | +91 99525 79147
+- **Official Website**: https://arksiec.com
+
+## Site Navigation Map
+- [Home](https://arksiec.com/): Executive overview, practice panel, lifecycle roadmap, and corporate highlights.
+- [About Us](https://arksiec.com/#about): Company story, mission, vision, principles, and leadership credentials.
+- [Services](https://arksiec.com/services): Comprehensive technical scope for Civil, Electrical, MEPF, and PMC practices.
+- [Projects](https://arksiec.com/projects): Engineering portfolio and infrastructure showcase.
+- [Careers](https://arksiec.com/careers): Candidate registration portal for engineering specialists.
+- [Contact Us](https://arksiec.com/contact): Direct project inquiry submission portal and headquarters details.

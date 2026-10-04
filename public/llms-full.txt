@@ -1,0 +1,76 @@
+# Comprehensive Knowledge Base — ARKS Integrated Engineering Consultancy LLP (ARKS IEC)
+
+## 1. Company Identity & Mission
+ARKS Integrated Engineering Consultancy LLP (ARKS IEC) is a premier multidisciplinary engineering consultancy firm headquartered in Nagercoil, Tamil Nadu, India. The firm was established by seasoned engineering directors with over 25 years of combined international experience in large-scale infrastructure, high-voltage power transmission, industrial facilities, and commercial developments.
+
+### Vision
+To be a globally trusted multidisciplinary engineering partner, delivering integrated solutions that power infrastructure, shape communities, and set new benchmarks in technical excellence, reliability, and sustainable development.
+
+### Mission
+To deliver world-class, integrated engineering solutions that are innovative, reliable, and efficient — empowering clients to build infrastructure that stands the test of time.
+
+### Core Values
+- **Integrity**: Uncompromising honesty, transparency, and ethical rigor in every client engagement and structural calculation.
+- **Excellence**: World-class engineering standards, meticulous quality controls, and precision execution across all disciplines.
+- **Collaboration**: Seamless alignment between Civil, Electrical, MEPF, and PMC client teams under a single accountable platform.
+- **Sustainability**: Future-focused designs that optimize energy efficiency, resource conservation, and environmental harmony.
+- **Innovation**: Deploying advanced technical modeling, BIM tools, and value engineering to solve complex infrastructure challenges.
+- **Founder Involvement**: Senior leadership stays directly involved from initial feasibility calculation to final handover testing.
+
+---
+
+## 2. Technical Disciplines & Scope of Services
+
+### A. Civil & Structural Engineering
+- Industrial foundation design and geotechnical analysis.
+- Structural steel framing, space frames, and heavy equipment foundations.
+- Reinforced concrete (RCC) structural calculations and reinforcement detailing.
+- Commercial, residential, and institutional building layout planning.
+- Value engineering for material optimization and constructability reviews.
+
+### B. Electrical High Voltage (HV), Medium Voltage (MV) & Extra High Voltage (EHV)
+- Air-Insulated Switchyards (AIS) and Gas-Insulated Switchyards (GIS) up to EHV levels.
+- Transmission line tower design, sag/tension calculations, and route profiling.
+- Grid power interconnections, transformer sizing, and busbar schematics.
+- Relay protection and control, trip circuit supervision, and SCADA automation integration.
+- Solar photovoltaic (PV) integration and grid stability studies.
+
+### C. MEPF Systems (Mechanical, Electrical, Plumbing & Fire Protection)
+- Heating, Ventilation, and Air Conditioning (HVAC) cooling/heating load calculations and ductwork layout.
+- Active and passive fire detection, sprinkler arrays, hydrants, and suppression system design.
+- Domestic water supply, sewage treatment plant (STP) piping, and rainwater harvesting schematics.
+- Low-voltage (LV) power distribution, lighting calculations, and building management systems (BMS).
+
+### D. Project Management Consultancy (PMC)
+- Milestone planning, baseline scheduling, and critical path analysis.
+- Vendor bid evaluation, tendering assistance, and contract administration.
+- Site quality control (QA/QC), safety audits (HSE), and material testing supervision.
+- Pre-commissioning inspections, punch-list resolution, and final project handover certification.
+
+---
+
+## 3. Leadership & Partners
+- **Suresh Rajan** — Founder & Managing Director
+- **Sree Krishna Kumar** — Co-Founder & Technical Director
+- **Sundaram Chandra** — Partner
+
+---
+
+## 4. International Standards & Codes Conformance
+Deliverables are engineered in strict compliance with:
+- **IEC**: International Electrotechnical Commission
+- **IEEE**: Institute of Electrical and Electronics Engineers
+- **IS**: Indian Standards Code of Practice
+- **BS**: British Standards
+- **NFPA**: National Fire Protection Association
+- **NBC**: National Building Code of India
+
+---
+
+## 5. Contact & Headquarters
+- **Firm Name**: ARKS Integrated Engineering Consultancy LLP
+- **Short Name**: ARKS IEC
+- **Registered Office**: Nagercoil, Tamil Nadu, India
+- **Official Email**: info@arksiec.com
+- **Phone Lines**: +91 87542 28580 | +91 99525 79147
+- **Official Website**: https://arksiec.com
