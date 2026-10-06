@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | ARKS IEC</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <style>
+    .x-icon {
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      vertical-align: -0.125em;
+      fill: currentColor;
+    }
+    i[class*="fa-"] {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-style: normal;
+      line-height: 1;
+    }
+    :root {
+      --x-navy-950: #06111f;
+      --x-accent: #f26a1b;
+      --x-accent-600: #dc5a0e;
+      --x-white: #ffffff;
+      --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(circle at 50% 30%, #0d223c 0%, var(--x-navy-950) 80%);
+      color: var(--x-white);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .brand-logo {
+      height: 48px;
+      width: auto;
+      margin-bottom: 32px;
+    }
+    .error-card {
+      max-width: 520px;
+      background: rgba(13, 26, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 48px 36px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.7);
+    }
+    .error-code {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      font-weight: 800;
+      color: var(--x-accent);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: var(--font-display);
+      font-size: 1.55rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 24px;
+      height: 48px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.25s ease;
+    }
+    .btn-primary {
+      background: var(--x-accent);
+      color: var(--x-white);
+    }
+    .btn-primary:hover {
+      background: var(--x-accent-600);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--x-white);
+    }
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-2px);
+    }
+  </style>
+  <script>
+    // GitHub Pages SPA client redirect for unknown dynamic routes
+    const path = window.location.pathname;
+    const validRoutes = ['/services', '/projects', '/careers', '/contact'];
+    if (validRoutes.includes(path)) {
+      sessionStorage.redirect = location.href;
+      location.replace('/');
+    }
+  </script>
+</head>
+<body>
+  <div class="error-card">
+    <a href="/">
+      <img src="/Photos/arks-logo-darkbg.png" alt="ARKS IEC" class="brand-logo">
+    </a>
+    <div class="error-code">404</div>
+    <h1>Document Not Located</h1>
+    <p>The requested engineering resource or page could not be found. It may have been relocated or updated.</p>
+    <div class="btn-group">
+      <a href="/" class="btn btn-primary"><i class="fa-solid fa-house"><svg class="x-icon" viewBox="0 0 576 512" aria-hidden="true"><path fill="currentColor" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 17-14 32.2-32 32.2h-64c-17.7 0-32-14.3-32-32V320H192v128c0 17.7-14.3 32-32 32H96c-18 0-32-15.2-32-32.2L64.7 287.6H32c-17 0-32-14.1-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 1 22 8l256.4 223.5c7 7 11 15 11 24z"/></svg></i> Return to Home</a>
+      <a href="/services" class="btn btn-outline"><i class="fa-solid fa-layer-group"><svg class="x-icon" viewBox="0 0 576 512" aria-hidden="true"><path fill="currentColor" d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.9 32 137.4 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM45.9 245.8l218.6 101c14.9 6.9 32.1 6.9 47 0l218.6-101c11.6-5.4 25.6-.2 31 11.4s.2 25.6-11.4 31l-218.6 101c-29.8 13.8-64.2 13.8-94 0L14.9 288.2C3.3 282.8-1.9 268.8 3.5 257.2s16.8-16.8 28.4-11.4l14 6zm0 96l218.6 101c14.9 6.9 32.1 6.9 47 0l218.6-101c11.6-5.4 25.6-.2 31 11.4s.2 25.6-11.4 31l-218.6 101c-29.8 13.8-64.2 13.8-94 0L14.9 384.2C3.3 378.8-1.9 364.8 3.5 353.2s16.8-16.8 28.4-11.4l14 6z"/></svg></i> View Services</a>
+    </div>
+  </div>
+</body>
+</html>

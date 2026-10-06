@@ -1,13 +1,14 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { navigateTo, initRouter, updateActiveNav } from './router';
+import { initIcons } from './icons';
 import './style.css';
 import './theme.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// ── Executive Preloader (logo goes B&W → colour in sync with 3s progress bar) ──
-function hidePreloader() {
+// ── Executive Preloader (tracks actual document & asset loading status) ──
+function initRealPreloader() {
   const el = document.getElementById('preloader');
   if (!el) return;
 
@@ -19,27 +20,77 @@ function hidePreloader() {
 
   // Mark as shown for the current session
   sessionStorage.setItem('arks_preloader_shown', 'true');
+  document.body.classList.add('is-preloading');
 
   const logo = document.getElementById('preloader-logo');
   const lineFill = document.getElementById('preloader-line-fill');
 
-  const DURATION = 3000;
-  const start = performance.now();
+  let currentProgress = 0.15;
+  let targetProgress = 0.25;
+  let isDone = false;
 
-  const tick = (now: number) => {
-    const p = Math.min((now - start) / DURATION, 1);
+  const updateDisplay = (p: number) => {
     if (lineFill) lineFill.style.width = `${p * 100}%`;
     if (logo) logo.style.filter = `grayscale(${1 - p}) brightness(${0.85 + 0.15 * p})`;
-    if (p < 1) {
-      requestAnimationFrame(tick);
-    } else {
-      setTimeout(() => {
-        el.classList.add('exiting');            // 1. content lifts & blurs out
-        setTimeout(() => el.classList.add('hidden'), 450);   // 2. curtain wipes up
-        setTimeout(() => el.remove(), 1500);    // 3. clean up
-      }, 200);
-    }
   };
+
+  updateDisplay(currentProgress);
+
+  // Milestone 1: DOM Ready
+  if (document.readyState === 'interactive' || document.readyState === 'complete') {
+    targetProgress = Math.max(targetProgress, 0.6);
+  } else {
+    document.addEventListener('DOMContentLoaded', () => {
+      targetProgress = Math.max(targetProgress, 0.6);
+    }, { once: true });
+  }
+
+  // Milestone 2: Fonts Loaded
+  if (document.fonts) {
+    document.fonts.ready.then(() => {
+      targetProgress = Math.max(targetProgress, 0.85);
+    }).catch(() => {});
+  }
+
+  // Milestone 3: Full Page & All Assets Loaded
+  const markComplete = () => {
+    targetProgress = 1.0;
+  };
+
+  if (document.readyState === 'complete') {
+    markComplete();
+  } else {
+    window.addEventListener('load', markComplete, { once: true });
+  }
+
+  // Safety fallback so preloader never stalls on external resource delay
+  setTimeout(markComplete, 3500);
+
+  // Frame loop smoothly tracking actual progress
+  const tick = () => {
+    const delta = targetProgress - currentProgress;
+    const speed = delta > 0.3 ? 0.15 : 0.08;
+    currentProgress += delta * speed;
+
+    if (currentProgress >= 0.99 && targetProgress >= 1.0) {
+      currentProgress = 1.0;
+      updateDisplay(1.0);
+      if (!isDone) {
+        isDone = true;
+        document.body.classList.remove('is-preloading');
+        setTimeout(() => {
+          el.classList.add('exiting');            // 1. content lifts & blurs out
+          setTimeout(() => el.classList.add('hidden'), 350);   // 2. curtain wipes up
+          setTimeout(() => el.remove(), 900);    // 3. clean up
+        }, 120);
+      }
+      return;
+    }
+
+    updateDisplay(currentProgress);
+    requestAnimationFrame(tick);
+  };
+
   requestAnimationFrame(tick);
 }
 
@@ -122,7 +173,7 @@ function initMobileMenu() {
     if (!target) return;
 
     e.preventDefault();
-    close();
+    setOpen(false);
     const href = target.getAttribute('href');
     const scrollTarget = target.getAttribute('data-mobile-nav-scroll');
 
@@ -134,9 +185,12 @@ function initMobileMenu() {
   });
 }
 
+// Start real preloader tracking immediately as script runs
+initRealPreloader();
+
 // ── Boot ──
 document.addEventListener('DOMContentLoaded', () => {
-  hidePreloader();
+  initIcons(document);
   initNavbar();
   initMobileMenu();
   initRouter();

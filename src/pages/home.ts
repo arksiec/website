@@ -1,8 +1,5 @@
 import { PageModule } from '../router';
 
-let heroInterval: number | null = null;
-let mouseMoveHandler: ((e: MouseEvent) => void) | null = null;
-
 const Home: PageModule = {
   render() {
     return `
@@ -12,7 +9,7 @@ const Home: PageModule = {
         <!-- Right Side Visuals (Geometric Glass Pane Effect) -->
         <div class="x-hero-reborn__visual">
           <div class="x-hero-reborn__visual-bg">
-            <img src="/Photos/project-electrical.jpg" alt="Engineering Background">
+            <img src="/Photos/project-electrical.webp" alt="Engineering Background" width="1200" height="896" fetchpriority="high">
           </div>
           <!-- Geometric Glass Panels & Orange Accents to emulate reference -->
           <div class="glass-pane glass-pane-1"></div>
@@ -38,29 +35,29 @@ const Home: PageModule = {
           
           <!-- Left Content -->
           <div class="x-hero-reborn__content">
-            <div class="x-hero-reborn__pill reveal">
+            <div class="x-hero-reborn__pill">
               <span class="pill-dot"></span>
               MULTIDISCIPLINARY ENGINEERING CONSULTANCY
             </div>
 
-            <h1 class="x-hero-reborn__title reveal">
+            <h1 class="x-hero-reborn__title">
               <span class="title-arks">ARKS</span>
               <span class="title-integrated">INTEGRATED</span>
               <span class="title-engineering">ENGINEERING CONSULTANTS</span>
             </h1>
             
-            <div class="x-hero-reborn__divider reveal"></div>
+            <div class="x-hero-reborn__divider"></div>
 
-            <p class="x-hero-reborn__desc reveal">
+            <p class="x-hero-reborn__desc">
               Single-window engineering consultancy delivering resilient infrastructure from concept to commissioning across 
               <strong>Civil &amp; Structural</strong>, <strong>Electrical HV/LV/EHV</strong>, 
               <strong>MEPF Systems</strong>, and <strong>Turnkey PMC</strong>.
             </p>
 
-            <div class="x-hero-reborn__actions reveal">
+            <div class="x-hero-reborn__actions">
               <a href="/contact" class="x-btn-reborn x-btn-reborn--primary" data-nav>
                 <span>Initiate Consultation</span>
-                <i class="fa-solid fa-arrow-right"></i>
+                <span class="x-btn-icon"><i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i></span>
               </a>
               <a href="/services" class="x-btn-reborn x-btn-reborn--outline" data-nav>
                 <span>Explore Technical Scope</span>
@@ -68,39 +65,45 @@ const Home: PageModule = {
             </div>
             
             <!-- Bottom Left Metrics Grid -->
-            <div class="x-hero-reborn__metrics reveal">
+            <div class="x-hero-reborn__metrics">
               <div class="metric">
-                <i class="fa-solid fa-cube metric-icon"></i>
+                <div class="metric-icon-wrap">
+                  <i class="fa-solid fa-cube"><svg class="x-icon" aria-hidden="true"><use href="#fa-cube"></use></svg></i>
+                </div>
                 <div class="metric-text">
                   <span class="metric-val">25+</span>
-                  <span class="metric-lbl">YEARS LEADERSHIP</span>
+                  <span class="metric-lbl">Years Leadership</span>
                 </div>
               </div>
               <div class="metric">
-                <i class="fa-solid fa-shield-halved metric-icon"></i>
+                <div class="metric-icon-wrap">
+                  <i class="fa-solid fa-shield-halved"><svg class="x-icon" aria-hidden="true"><use href="#fa-shield-halved"></use></svg></i>
+                </div>
                 <div class="metric-text">
                   <span class="metric-val">100%</span>
-                  <span class="metric-lbl">CODE COMPLIANCE</span>
+                  <span class="metric-lbl">Code Compliance</span>
                 </div>
               </div>
               <div class="metric">
-                <i class="fa-solid fa-gear metric-icon"></i>
+                <div class="metric-icon-wrap">
+                  <i class="fa-solid fa-gear"><svg class="x-icon" aria-hidden="true"><use href="#fa-gear"></use></svg></i>
+                </div>
                 <div class="metric-text">
-                  <span class="metric-val">GLOBAL<br>CONFORMANCE</span>
-                  <span class="metric-lbl">IEC IEEE NBC BS IS</span>
+                  <span class="metric-val">Global Conformance</span>
+                  <span class="metric-lbl">IEC • IEEE • NBC Codes</span>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Bottom Right Circular Discover -->
-          <div class="x-hero-reborn__discover reveal">
+          <div class="x-hero-reborn__discover">
             <div class="discover-circles">
               <div class="circle circle-1"></div>
               <div class="circle circle-2"></div>
             </div>
             <a href="/#about" class="discover-link" data-nav-scroll="#about">
-              DISCOVER ARKS <i class="fa-solid fa-arrow-right"></i>
+              DISCOVER ARKS <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
             </a>
           </div>
 
@@ -112,8 +115,8 @@ const Home: PageModule = {
         <div class="x-container">
           <div class="x-about">
             <div class="x-about__media reveal">
-              <img src="/Photos/about-modern-tower.jpg" alt="ARKS Engineering Leadership Review" class="x-about__img-main">
-              <img src="/Photos/about-blueprint-review.jpg" alt="ARKS Infrastructure Project Execution" class="x-about__img-sub">
+              <img src="/Photos/about-modern-tower.webp" alt="ARKS Engineering Leadership Review" class="x-about__img-main" width="1080" height="720" loading="lazy" decoding="async">
+              <img src="/Photos/about-blueprint-review.webp" alt="ARKS Infrastructure Project Execution" class="x-about__img-sub" width="1080" height="608" loading="lazy" decoding="async">
               <div class="x-about__badge">
                 <strong>25+</strong>
                 <span>Years of Leadership Experience</span>
@@ -137,7 +140,7 @@ const Home: PageModule = {
 
               <div class="margin-top-md reveal" style="margin-top: 28px;">
                 <a href="/contact" class="x-btn x-btn--dark" data-nav>
-                  <span>Connect With Our Directors</span> <i class="fa-solid fa-arrow-right"></i>
+                  <span>Connect With Our Directors</span> <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
                 </a>
               </div>
             </div>
@@ -146,7 +149,7 @@ const Home: PageModule = {
           <!-- Mission & Vision Cards -->
           <div class="x-mv">
             <div class="x-mv__card reveal">
-              <div class="x-mv__icon"><i class="fa-solid fa-eye"></i></div>
+              <div class="x-mv__icon"><i class="fa-solid fa-eye"><svg class="x-icon" aria-hidden="true"><use href="#fa-eye"></use></svg></i></div>
               <h3>Our Vision</h3>
               <p>
                 To be a globally trusted multidisciplinary engineering partner, delivering integrated solutions that power infrastructure, shape communities, and set new benchmarks in technical excellence, reliability, and sustainable development.
@@ -154,7 +157,7 @@ const Home: PageModule = {
             </div>
 
             <div class="x-mv__card x-mv__card--dark reveal">
-              <div class="x-mv__icon"><i class="fa-solid fa-bullseye"></i></div>
+              <div class="x-mv__icon"><i class="fa-solid fa-bullseye"><svg class="x-icon" aria-hidden="true"><use href="#fa-bullseye"></use></svg></i></div>
               <h3>Our Mission</h3>
               <p>
                 To deliver world-class, integrated engineering solutions that are innovative, reliable, and efficient — empowering our clients to build infrastructure that stands the test of time.
@@ -183,52 +186,52 @@ const Home: PageModule = {
             <!-- Civil & Structural -->
             <div class="x-svc reveal">
               <div class="x-svc__img">
-                <img src="/Photos/service-civil-structural.jpg" alt="Civil & Structural Engineering">
+                <img src="/Photos/service-civil-structural.webp" alt="Civil & Structural Engineering" width="1080" height="608" loading="lazy" decoding="async">
               </div>
               <div class="x-svc__body">
                 <span class="x-svc__num">DISCIPLINE 01</span>
                 <h3>Civil &amp; Structural</h3>
                 <p>Industrial foundations, heavy steel structures, geotechnical stability, commercial layouts, and 3D BIM structural detailing.</p>
-                <a href="/services#civil" class="x-link" data-nav>Explore Civil Scope <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/services#civil" class="x-link" data-nav>Explore Civil Scope <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i></a>
               </div>
             </div>
 
             <!-- Electrical HV / LV / EHV -->
             <div class="x-svc reveal">
               <div class="x-svc__img">
-                <img src="/Photos/project-electrical.jpg" alt="Electrical Transmission & Substations">
+                <img src="/Photos/project-electrical.webp" alt="Electrical Transmission & Substations" width="1200" height="896" loading="lazy" decoding="async">
               </div>
               <div class="x-svc__body">
                 <span class="x-svc__num">DISCIPLINE 02</span>
                 <h3>Electrical HV / LV / EHV</h3>
                 <p>Substation design up to 400kV, transmission towers, grid interconnections, switchyards, relay protection, and renewable integration.</p>
-                <a href="/services#electrical" class="x-link" data-nav>Explore Electrical Scope <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/services#electrical" class="x-link" data-nav>Explore Electrical Scope <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i></a>
               </div>
             </div>
 
             <!-- MEPF Building Services -->
             <div class="x-svc reveal">
               <div class="x-svc__img">
-                <img src="/Photos/project-mepf.jpg" alt="MEPF Building Services">
+                <img src="/Photos/project-mepf.webp" alt="MEPF Building Services" width="1024" height="1024" loading="lazy" decoding="async">
               </div>
               <div class="x-svc__body">
                 <span class="x-svc__num">DISCIPLINE 03</span>
                 <h3>MEPF Systems</h3>
                 <p>Synchronized HVAC cooling/heating loads, fire detection and suppression, plumbing hydraulics, and building automation (BMS).</p>
-                <a href="/services#mepf" class="x-link" data-nav>Explore MEPF Scope <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/services#mepf" class="x-link" data-nav>Explore MEPF Scope <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i></a>
               </div>
             </div>
 
             <!-- Project Management Consultancy (PMC) -->
             <div class="x-svc reveal">
               <div class="x-svc__img">
-                <img src="/Photos/project-pmc.jpg" alt="Project Management Consultancy">
+                <img src="/Photos/project-pmc.webp" alt="Project Management Consultancy" width="1024" height="1024" loading="lazy" decoding="async">
               </div>
               <div class="x-svc__body">
                 <span class="x-svc__num">DISCIPLINE 04</span>
                 <h3>Project Management (PMC)</h3>
                 <p>Milestone baseline planning, vendor bid evaluations, on-site QA/QC audits, HSE inspections, and final commissioning handover.</p>
-                <a href="/services#pmc" class="x-link" data-nav>Explore PMC Scope <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/services#pmc" class="x-link" data-nav>Explore PMC Scope <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i></a>
               </div>
             </div>
           </div>
@@ -293,10 +296,10 @@ const Home: PageModule = {
 
           <div class="x-values reveal">
             <div class="x-value">
-              <img src="/Photos/value-integrity.jpg" alt="Integrity" class="x-value__img" loading="lazy">
+              <img src="/Photos/value-integrity.webp" alt="Integrity" class="x-value__img" width="800" height="530" loading="lazy" decoding="async">
               <div class="x-value__overlay"></div>
               <div class="x-value__content">
-                <div class="x-value__icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="x-value__icon"><i class="fa-solid fa-shield-halved"><svg class="x-icon" aria-hidden="true"><use href="#fa-shield-halved"></use></svg></i></div>
                 <h4>Integrity</h4>
                 <div class="x-value__writeup">
                   <p>Uncompromising honesty, transparent technical advisory, and ethical compliance in every client engagement and design calculation.</p>
@@ -305,10 +308,10 @@ const Home: PageModule = {
             </div>
 
             <div class="x-value">
-              <img src="/Photos/value-excellence.jpg" alt="Excellence" class="x-value__img" loading="lazy">
+              <img src="/Photos/value-excellence.webp" alt="Excellence" class="x-value__img" width="800" height="534" loading="lazy" decoding="async">
               <div class="x-value__overlay"></div>
               <div class="x-value__content">
-                <div class="x-value__icon"><i class="fa-solid fa-medal"></i></div>
+                <div class="x-value__icon"><i class="fa-solid fa-medal"><svg class="x-icon" aria-hidden="true"><use href="#fa-medal"></use></svg></i></div>
                 <h4>Excellence</h4>
                 <div class="x-value__writeup">
                   <p>Adherence to premier international engineering standards (IEC, IEEE, NBC, BS, IS) with multi-tier quality assurance audits.</p>
@@ -317,10 +320,10 @@ const Home: PageModule = {
             </div>
 
             <div class="x-value">
-              <img src="/Photos/value-collaboration.jpg" alt="Collaboration" class="x-value__img" loading="lazy">
+              <img src="/Photos/value-collaboration.webp" alt="Collaboration" class="x-value__img" width="800" height="534" loading="lazy" decoding="async">
               <div class="x-value__overlay"></div>
               <div class="x-value__content">
-                <div class="x-value__icon"><i class="fa-solid fa-handshake"></i></div>
+                <div class="x-value__icon"><i class="fa-solid fa-handshake"><svg class="x-icon" aria-hidden="true"><use href="#fa-handshake"></use></svg></i></div>
                 <h4>Collaboration</h4>
                 <div class="x-value__writeup">
                   <p>Frictionless alignment across Civil, Electrical, MEPF, and client teams under a single accountable engineering management platform.</p>
@@ -329,10 +332,10 @@ const Home: PageModule = {
             </div>
 
             <div class="x-value">
-              <img src="/Photos/value-sustainability.jpg" alt="Sustainability" class="x-value__img" loading="lazy">
+              <img src="/Photos/value-sustainability.webp" alt="Sustainability" class="x-value__img" width="800" height="533" loading="lazy" decoding="async">
               <div class="x-value__overlay"></div>
               <div class="x-value__content">
-                <div class="x-value__icon"><i class="fa-solid fa-leaf"></i></div>
+                <div class="x-value__icon"><i class="fa-solid fa-leaf"><svg class="x-icon" aria-hidden="true"><use href="#fa-leaf"></use></svg></i></div>
                 <h4>Sustainability</h4>
                 <div class="x-value__writeup">
                   <p>Future-focused designs optimizing energy consumption, resource efficiency, and environmental resilience across the infrastructure lifecycle.</p>
@@ -341,10 +344,10 @@ const Home: PageModule = {
             </div>
 
             <div class="x-value">
-              <img src="/Photos/value-innovation.jpg" alt="Innovation" class="x-value__img" loading="lazy">
+              <img src="/Photos/value-innovation.webp" alt="Innovation" class="x-value__img" width="800" height="534" loading="lazy" decoding="async">
               <div class="x-value__overlay"></div>
               <div class="x-value__content">
-                <div class="x-value__icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <div class="x-value__icon"><i class="fa-solid fa-lightbulb"><svg class="x-icon" aria-hidden="true"><use href="#fa-lightbulb"></use></svg></i></div>
                 <h4>Innovation</h4>
                 <div class="x-value__writeup">
                   <p>Leveraging advanced BIM modeling, computational simulation, and value engineering to resolve complex infrastructure bottlenecks.</p>
@@ -353,10 +356,10 @@ const Home: PageModule = {
             </div>
 
             <div class="x-value">
-              <img src="/Photos/value-safety.jpg" alt="Founder Involvement" class="x-value__img" loading="lazy">
+              <img src="/Photos/value-safety.webp" alt="Founder Involvement" class="x-value__img" width="800" height="1200" loading="lazy" decoding="async">
               <div class="x-value__overlay"></div>
               <div class="x-value__content">
-                <div class="x-value__icon"><i class="fa-solid fa-user-tie"></i></div>
+                <div class="x-value__icon"><i class="fa-solid fa-user-tie"><svg class="x-icon" aria-hidden="true"><use href="#fa-user-tie"></use></svg></i></div>
                 <h4>Founder Involvement</h4>
                 <div class="x-value__writeup">
                   <p>Direct leadership participation from preliminary calculations through site audits and final pre-commissioning verification.</p>
@@ -372,7 +375,7 @@ const Home: PageModule = {
         <div class="x-container">
           <div class="x-why">
             <div class="x-why__media reveal">
-              <img src="/Photos/about-modern-tower.jpg" alt="ARKS IEC Quality & Engineering Standards">
+              <img src="/Photos/about-modern-tower.webp" alt="ARKS IEC Quality & Engineering Standards" width="1080" height="720" loading="lazy" decoding="async">
               <div class="x-why__codes">
                 <span>International Codes Conformance</span>
                 <div>
@@ -395,7 +398,7 @@ const Home: PageModule = {
 
               <div class="x-why__list">
                 <div class="x-why__item">
-                  <div class="x-why__icon"><i class="fa-solid fa-user-gear"></i></div>
+                  <div class="x-why__icon"><i class="fa-solid fa-user-gear"><svg class="x-icon" aria-hidden="true"><use href="#fa-user-gear"></use></svg></i></div>
                   <div>
                     <h4>Founder-Led Senior Expertise</h4>
                     <p>Over 25 years of hands-on leadership directing major power transmission networks, civil structures, and industrial hubs.</p>
@@ -403,7 +406,7 @@ const Home: PageModule = {
                 </div>
 
                 <div class="x-why__item">
-                  <div class="x-why__icon"><i class="fa-solid fa-circle-check"></i></div>
+                  <div class="x-why__icon"><i class="fa-solid fa-circle-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-circle-check"></use></svg></i></div>
                   <div>
                     <h4>Rigorous Code Conformance</h4>
                     <p>All designs and calculations strictly adhere to IEC, IEEE, NBC, BS, and IS standards with zero compromise on safety margins.</p>
@@ -411,7 +414,7 @@ const Home: PageModule = {
                 </div>
 
                 <div class="x-why__item">
-                  <div class="x-why__icon"><i class="fa-solid fa-stopwatch"></i></div>
+                  <div class="x-why__icon"><i class="fa-solid fa-stopwatch"><svg class="x-icon" aria-hidden="true"><use href="#fa-stopwatch"></use></svg></i></div>
                   <div>
                     <h4>Milestone-Driven Execution</h4>
                     <p>Proactive scheduling and fast-track coordination that reduce interface delays and keep project milestones strictly on track.</p>
@@ -419,7 +422,7 @@ const Home: PageModule = {
                 </div>
 
                 <div class="x-why__item">
-                  <div class="x-why__icon"><i class="fa-solid fa-chart-pie"></i></div>
+                  <div class="x-why__icon"><i class="fa-solid fa-chart-pie"><svg class="x-icon" aria-hidden="true"><use href="#fa-chart-pie"></use></svg></i></div>
                   <div>
                     <h4>Smart Value Engineering</h4>
                     <p>Systematic optimization of material quantities and equipment sizing to lower capital expenditure without sacrificing longevity.</p>
@@ -483,7 +486,7 @@ const Home: PageModule = {
             </div>
             <div class="x-cta__actions">
               <a href="/contact" class="x-btn x-btn--primary" data-nav>
-                <span>Get in Touch</span> <i class="fa-solid fa-arrow-right"></i>
+                <span>Get in Touch</span> <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
               </a>
               <a href="/services" class="x-btn x-btn--light" data-nav>
                 <span>View All Services</span>
@@ -496,67 +499,11 @@ const Home: PageModule = {
   },
 
   init() {
-    if (heroInterval) clearInterval(heroInterval);
-
-    const heroSection = document.getElementById('hero-section');
-    const slides = document.querySelectorAll('.x-hero-reborn__slide');
-    const spotlight = document.getElementById('hero-spotlight');
-    const orbOrange = document.getElementById('hero-orb-orange');
-    const orbCyan = document.getElementById('hero-orb-cyan');
-
-    // 1. Slider Management (Background cross-fade)
-    if (slides.length) {
-      let currentSlide = 0;
-
-      const goToSlide = (index: number) => {
-        slides.forEach((s, i) => s.classList.toggle('is-active', i === index));
-        currentSlide = index;
-      };
-
-      const startSlider = () => {
-        if (heroInterval) clearInterval(heroInterval);
-        heroInterval = window.setInterval(() => {
-          const next = (currentSlide + 1) % slides.length;
-          goToSlide(next);
-        }, 5500);
-      };
-
-      startSlider();
-    }
-
-    // 2. Interactive Ambient Cursor Spotlight (Smooth & Professional)
-    if (heroSection && (spotlight || orbOrange || orbCyan)) {
-      mouseMoveHandler = (e: MouseEvent) => {
-        const rect = heroSection.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        if (spotlight) {
-          spotlight.style.transform = `translate3d(${x - 300}px, ${y - 300}px, 0)`;
-          spotlight.style.opacity = '1';
-        }
-        if (orbOrange) {
-          orbOrange.style.transform = `translate3d(${(x - rect.width / 2) * 0.05}px, ${(y - rect.height / 2) * 0.05}px, 0)`;
-        }
-        if (orbCyan) {
-          orbCyan.style.transform = `translate3d(${(rect.width / 2 - x) * 0.04}px, ${(rect.height / 2 - y) * 0.04}px, 0)`;
-        }
-      };
-
-      heroSection.addEventListener('mousemove', mouseMoveHandler, { passive: true });
-    }
+    // Page init
   },
 
   destroy() {
-    if (heroInterval) {
-      clearInterval(heroInterval);
-      heroInterval = null;
-    }
-    const heroSection = document.getElementById('hero-section');
-    if (heroSection && mouseMoveHandler) {
-      heroSection.removeEventListener('mousemove', mouseMoveHandler);
-      mouseMoveHandler = null;
-    }
+    // Page cleanup
   }
 };
 

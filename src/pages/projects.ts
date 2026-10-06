@@ -5,16 +5,15 @@ const Projects: PageModule = {
     return `
       <!-- Corporate Premium Page Hero -->
       <section class="x-page-hero">
-        <img src="/Photos/projects-hero-complex.jpg" alt="ARKS IEC Project Showcase" class="x-page-hero__bg">
+        <img src="/Photos/projects-hero-complex.webp" alt="ARKS IEC Project Showcase" class="x-page-hero__bg" width="1920" height="1278" fetchpriority="high">
         <div class="x-container">
           <div class="x-page-hero__inner">
             <div class="x-crumb">
               <a href="/" data-nav>Home</a>
-              <i class="fa-solid fa-chevron-right"></i>
+              <i class="fa-solid fa-chevron-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-chevron-right"></use></svg></i>
               <span>Project Portfolio</span>
             </div>
 
-            <div class="x-eyebrow reveal" style="color: var(--x-accent);">ARKS INTEGRATED ENGINEERING CONSULTANCY</div>
             <h1 class="x-page-hero__title reveal">
               Engineering Landmark<br>
               <em>Infrastructure Assets.</em>
@@ -25,7 +24,7 @@ const Projects: PageModule = {
 
             <div class="x-page-hero__actions reveal">
               <a href="/contact" class="x-btn x-btn--primary" data-nav>
-                <span>Request Project Credentials</span> <i class="fa-solid fa-arrow-right"></i>
+                <span>Request Project Credentials</span> <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
               </a>
               <a href="#sectors" class="x-btn x-btn--light">
                 <span>View Sectors</span>
@@ -49,7 +48,7 @@ const Projects: PageModule = {
           <div class="x-sectors">
             <!-- Sector 1: Power & Grid -->
             <div class="x-sector reveal">
-              <img src="/Photos/project-substation.jpg" alt="EHV Substation and Power Grid Infrastructure">
+              <img src="/Photos/project-substation.webp" alt="EHV Substation and Power Grid Infrastructure" width="1000" height="667" loading="lazy" decoding="async">
               <div class="x-sector__body">
                 <span>SECTOR 01</span>
                 <h3>Power Transmission &amp; EHV Substations</h3>
@@ -58,7 +57,7 @@ const Projects: PageModule = {
 
             <!-- Sector 2: Civil & Structural -->
             <div class="x-sector reveal">
-              <img src="/Photos/project-civil.jpg" alt="Civil Infrastructure & Heavy Engineering">
+              <img src="/Photos/project-civil.webp" alt="Civil Infrastructure & Heavy Engineering" width="1200" height="896" loading="lazy" decoding="async">
               <div class="x-sector__body">
                 <span>SECTOR 02</span>
                 <h3>Civil &amp; Heavy Industrial Infrastructure</h3>
@@ -67,7 +66,7 @@ const Projects: PageModule = {
 
             <!-- Sector 3: MEPF High-Rises -->
             <div class="x-sector reveal">
-              <img src="/Photos/project-commercial-tower.jpg" alt="Commercial Towers & High Rise MEPF">
+              <img src="/Photos/project-commercial-tower.webp" alt="Commercial Towers & High Rise MEPF" width="1000" height="667" loading="lazy" decoding="async">
               <div class="x-sector__body">
                 <span>SECTOR 03</span>
                 <h3>Commercial Towers &amp; Institutional MEPF</h3>
@@ -76,7 +75,7 @@ const Projects: PageModule = {
 
             <!-- Sector 4: Solar & Renewables -->
             <div class="x-sector reveal">
-              <img src="/Photos/project-solar.jpg" alt="Solar Photovoltaic Grid Interconnection">
+              <img src="/Photos/project-solar.webp" alt="Solar Photovoltaic Grid Interconnection" width="1024" height="1024" loading="lazy" decoding="async">
               <div class="x-sector__body">
                 <span>SECTOR 04</span>
                 <h3>Renewables &amp; Solar Grid Interconnections</h3>
@@ -86,7 +85,7 @@ const Projects: PageModule = {
 
           <!-- Portfolio Expansion Dossier Notice -->
           <div class="x-notice reveal">
-            <i class="fa-solid fa-folder-open"></i>
+            <i class="fa-solid fa-folder-open"><svg class="x-icon" aria-hidden="true"><use href="#fa-folder-open"></use></svg></i>
             <div>
               <strong>Comprehensive Project Dossier Available on Request:</strong> We are currently updating our public digital case study archive with detailed blueprints, BOQ metrics, and single-line schematics. To receive our formal qualifications dossier for developer or tender qualification, please contact our partner desk directly at <a href="mailto:info@arksiec.com" style="color: var(--x-accent); font-weight: 600; text-decoration: underline;">info@arksiec.com</a>.
             </div>
@@ -107,7 +106,7 @@ const Projects: PageModule = {
             </div>
             <div class="x-cta__actions">
               <a href="/contact" class="x-btn x-btn--primary" data-nav>
-                <span>Initiate Project Inquiry</span> <i class="fa-solid fa-arrow-right"></i>
+                <span>Initiate Project Inquiry</span> <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
               </a>
               <a href="/" class="x-btn x-btn--light" data-nav>
                 <span>Back to Home</span>

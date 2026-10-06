@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  plugins: [],
   // Dev server and build configurations
   server: {
     port: 3000,
@@ -11,3 +12,4 @@ export default defineConfig({
     sourcemap: true
   }
 });
+

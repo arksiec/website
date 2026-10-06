@@ -17,7 +17,7 @@ const About: PageModule = {
         <div class="container">
           <div class="about-split">
             <div class="about-img-wrap reveal">
-              <img src="/Photos/about-modern-tower.jpg" alt="ARKS Engineering">
+              <img src="/Photos/about-modern-tower.webp" alt="ARKS Engineering" width="1080" height="720" loading="lazy" decoding="async">
             </div>
             <div class="about-content">
               <div class="eyebrow reveal">Our Story</div>
@@ -40,11 +40,11 @@ const About: PageModule = {
           <h2 class="heading-lg reveal" style="margin-bottom: 48px;">What drives us forward.</h2>
           <div class="mv-grid">
             <div class="mv-card reveal">
-              <h3><i class="fa-solid fa-bullseye" style="color: var(--accent); margin-right: 12px;"></i>Our Mission</h3>
+              <h3><i class="fa-solid fa-bullseye" style="color: var(--accent); margin-right: 12px;"><svg class="x-icon" aria-hidden="true"><use href="#fa-bullseye"></use></svg></i>Our Mission</h3>
               <p>To deliver world-class, integrated engineering solutions that are innovative, reliable, and efficient — empowering our clients to build infrastructure that stands the test of time.</p>
             </div>
             <div class="mv-card reveal">
-              <h3><i class="fa-solid fa-eye" style="color: var(--accent); margin-right: 12px;"></i>Our Vision</h3>
+              <h3><i class="fa-solid fa-eye" style="color: var(--accent); margin-right: 12px;"><svg class="x-icon" aria-hidden="true"><use href="#fa-eye"></use></svg></i>Our Vision</h3>
               <p>To become the most trusted multi-disciplinary engineering consultancy in India, recognized for our technical excellence, collaborative approach, and commitment to sustainable development.</p>
             </div>
           </div>
@@ -58,32 +58,32 @@ const About: PageModule = {
           <h2 class="heading-lg reveal" style="margin-bottom: 48px;">Principles that guide every decision.</h2>
           <div class="values-grid">
             <div class="value-card reveal">
-              <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="service-icon"><i class="fa-solid fa-shield-halved"><svg class="x-icon" aria-hidden="true"><use href="#fa-shield-halved"></use></svg></i></div>
               <h3>Integrity</h3>
               <p>Honesty and transparency in every client interaction and design output.</p>
             </div>
             <div class="value-card reveal">
-              <div class="service-icon"><i class="fa-solid fa-medal"></i></div>
+              <div class="service-icon"><i class="fa-solid fa-medal"><svg class="x-icon" aria-hidden="true"><use href="#fa-medal"></use></svg></i></div>
               <h3>Excellence</h3>
               <p>Uncompromising quality standards across all disciplines and deliverables.</p>
             </div>
             <div class="value-card reveal">
-              <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+              <div class="service-icon"><i class="fa-solid fa-handshake"><svg class="x-icon" aria-hidden="true"><use href="#fa-handshake"></use></svg></i></div>
               <h3>Collaboration</h3>
               <p>True partnership with clients, architects, and contractors at every stage.</p>
             </div>
             <div class="value-card reveal">
-              <div class="service-icon"><i class="fa-solid fa-leaf"></i></div>
+              <div class="service-icon"><i class="fa-solid fa-leaf"><svg class="x-icon" aria-hidden="true"><use href="#fa-leaf"></use></svg></i></div>
               <h3>Sustainability</h3>
               <p>Engineering solutions that respect the environment and conserve resources.</p>
             </div>
             <div class="value-card reveal">
-              <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <div class="service-icon"><i class="fa-solid fa-lightbulb"><svg class="x-icon" aria-hidden="true"><use href="#fa-lightbulb"></use></svg></i></div>
               <h3>Innovation</h3>
               <p>Embracing the latest tools, technologies, and design methodologies.</p>
             </div>
             <div class="value-card reveal">
-              <div class="service-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="service-icon"><i class="fa-solid fa-users"><svg class="x-icon" aria-hidden="true"><use href="#fa-users"></use></svg></i></div>
               <h3>People First</h3>
               <p>Investing in our engineers and creating a culture of continuous growth.</p>
             </div>
@@ -98,19 +98,19 @@ const About: PageModule = {
           <h2 class="heading-lg reveal" style="margin-bottom: 48px;">Meet the minds behind ARKS.</h2>
           <div class="leaders-grid">
             <div class="leader-card reveal">
-              <div class="leader-avatar"><i class="fa-solid fa-user"></i></div>
-              <h4>Rahul Sharma</h4>
-              <p>Founding Partner & Managing Director</p>
+              <div class="leader-avatar"><i class="fa-solid fa-user"><svg class="x-icon" aria-hidden="true"><use href="#fa-user"></use></svg></i></div>
+              <h4>Suresh Rajan</h4>
+              <p>Founder & Managing Director</p>
             </div>
             <div class="leader-card reveal">
-              <div class="leader-avatar"><i class="fa-solid fa-user"></i></div>
-              <h4>Arvind Patel</h4>
+              <div class="leader-avatar"><i class="fa-solid fa-user"><svg class="x-icon" aria-hidden="true"><use href="#fa-user"></use></svg></i></div>
+              <h4>Sree Krishna Kumar</h4>
               <p>Co-Founder & Technical Director</p>
             </div>
             <div class="leader-card reveal">
-              <div class="leader-avatar"><i class="fa-solid fa-user"></i></div>
-              <h4>Karan Singh</h4>
-              <p>Senior Partner, Head of Electrical</p>
+              <div class="leader-avatar"><i class="fa-solid fa-user"><svg class="x-icon" aria-hidden="true"><use href="#fa-user"></use></svg></i></div>
+              <h4>Sundaram Chandra</h4>
+              <p>Partner</p>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ const About: PageModule = {
           <h2 class="heading-lg reveal">Want to work with us?</h2>
           <p class="reveal">Let's collaborate on your next infrastructure project.</p>
           <div class="cta-actions reveal">
-            <a href="/contact" class="btn btn--accent" data-nav>Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/contact" class="btn btn--accent" data-nav>Get in Touch <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i></a>
           </div>
         </div>
       </section>

@@ -5,16 +5,15 @@ const Services: PageModule = {
     return `
       <!-- Corporate Premium Page Hero -->
       <section class="x-page-hero">
-        <img src="/Photos/services-hero-bim.jpg" alt="Engineering Disciplines" class="x-page-hero__bg">
+        <img src="/Photos/services-hero-bim.webp" alt="Engineering Disciplines" class="x-page-hero__bg" width="1920" height="1281" fetchpriority="high">
         <div class="x-container">
           <div class="x-page-hero__inner">
             <div class="x-crumb">
               <a href="/" data-nav>Home</a>
-              <i class="fa-solid fa-chevron-right"></i>
+              <i class="fa-solid fa-chevron-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-chevron-right"></use></svg></i>
               <span>Engineering Disciplines</span>
             </div>
 
-            <div class="x-eyebrow reveal" style="color: var(--x-accent);">ARKS INTEGRATED ENGINEERING CONSULTANCY</div>
             <h1 class="x-page-hero__title reveal">
               Multidisciplinary Capabilities.<br>
               <em>Engineered for Scale.</em>
@@ -25,7 +24,7 @@ const Services: PageModule = {
 
             <div class="x-page-hero__actions reveal">
               <a href="/contact" class="x-btn x-btn--primary" data-nav>
-                <span>Request Technical Proposal</span> <i class="fa-solid fa-arrow-right"></i>
+                <span>Request Technical Proposal</span> <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
               </a>
               <a href="#civil" class="x-btn x-btn--light">
                 <span>View Disciplines</span>
@@ -35,15 +34,6 @@ const Services: PageModule = {
         </div>
       </section>
 
-      <!-- Quick Discipline Anchor Bar -->
-      <nav class="x-subnav" aria-label="Discipline Navigation">
-        <div class="x-container x-subnav__inner">
-          <a href="#civil"><b>01</b> Civil &amp; Structural</a>
-          <a href="#electrical"><b>02</b> Electrical HV / LV / EHV</a>
-          <a href="#mepf"><b>03</b> MEPF Building Services</a>
-          <a href="#pmc"><b>04</b> Project Management (PMC)</a>
-        </div>
-      </nav>
 
       <!-- Detailed Disciplines Showcase -->
       <section class="x-section">
@@ -59,22 +49,22 @@ const Services: PageModule = {
               </p>
 
               <ul class="x-checklist">
-                <li><i class="fa-solid fa-check"></i> Industrial heavy machinery foundation design &amp; dynamic analysis</li>
-                <li><i class="fa-solid fa-check"></i> Structural steel framing, pipe racks, and space frame engineering</li>
-                <li><i class="fa-solid fa-check"></i> Reinforced concrete (RCC) structural modeling &amp; rebar detailing</li>
-                <li><i class="fa-solid fa-check"></i> Commercial &amp; institutional architectural layout space planning</li>
-                <li><i class="fa-solid fa-check"></i> Value-engineered BOQ calculation for material &amp; cost optimization</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Industrial heavy machinery foundation design &amp; dynamic analysis</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Structural steel framing, pipe racks, and space frame engineering</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Reinforced concrete (RCC) structural modeling &amp; rebar detailing</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Commercial &amp; institutional architectural layout space planning</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Value-engineered BOQ calculation for material &amp; cost optimization</li>
               </ul>
 
               <a href="/contact" class="x-btn x-btn--primary" data-nav>
-                <span>Consult Civil Engineering Leads</span> <i class="fa-solid fa-arrow-right"></i>
+                <span>Consult Civil Engineering Leads</span> <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
               </a>
             </div>
 
             <div class="x-svc-row__media reveal">
-              <img src="/Photos/service-civil-structural.jpg" alt="Civil & Structural Engineering ARKS IEC">
+              <img src="/Photos/service-civil-structural.webp" alt="Civil & Structural Engineering ARKS IEC" width="1080" height="608" loading="lazy" decoding="async">
               <div class="x-svc-row__tag">
-                <i class="fa-solid fa-building-user"></i>
+                <i class="fa-solid fa-building-user"><svg class="x-icon" aria-hidden="true"><use href="#fa-building-user"></use></svg></i>
                 <span>Structural Integrity Guaranteed</span>
               </div>
             </div>
@@ -90,22 +80,22 @@ const Services: PageModule = {
               </p>
 
               <ul class="x-checklist">
-                <li><i class="fa-solid fa-check"></i> Substation layouts, single-line schematics, &amp; busbar configuration</li>
-                <li><i class="fa-solid fa-check"></i> High-voltage transmission line tower design &amp; route profiling</li>
-                <li><i class="fa-solid fa-check"></i> Short-circuit fault calculations, grounding, &amp; lightning protection</li>
-                <li><i class="fa-solid fa-check"></i> Relay protection, coordination curves, &amp; SCADA automation</li>
-                <li><i class="fa-solid fa-check"></i> Solar photovoltaic (PV) generation grid interconnection studies</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Substation layouts, single-line schematics, &amp; busbar configuration</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> High-voltage transmission line tower design &amp; route profiling</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Short-circuit fault calculations, grounding, &amp; lightning protection</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Relay protection, coordination curves, &amp; SCADA automation</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Solar photovoltaic (PV) generation grid interconnection studies</li>
               </ul>
 
               <a href="/contact" class="x-btn x-btn--primary" data-nav>
-                <span>Consult Electrical Leads</span> <i class="fa-solid fa-arrow-right"></i>
+                <span>Consult Electrical Leads</span> <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
               </a>
             </div>
 
             <div class="x-svc-row__media reveal">
-              <img src="/Photos/project-electrical.jpg" alt="Electrical Transmission and Substations ARKS IEC">
+              <img src="/Photos/project-electrical.webp" alt="Electrical Transmission and Substations ARKS IEC" width="1200" height="896" loading="lazy" decoding="async">
               <div class="x-svc-row__tag">
-                <i class="fa-solid fa-bolt"></i>
+                <i class="fa-solid fa-bolt"><svg class="x-icon" aria-hidden="true"><use href="#fa-bolt"></use></svg></i>
                 <span>Up to 400kV EHV Substation Design</span>
               </div>
             </div>
@@ -121,22 +111,22 @@ const Services: PageModule = {
               </p>
 
               <ul class="x-checklist">
-                <li><i class="fa-solid fa-check"></i> HVAC thermal load calculations, chiller systems, &amp; ductwork layout</li>
-                <li><i class="fa-solid fa-check"></i> Fire detection, sprinkler arrays, hydrants, &amp; clean-agent suppression</li>
-                <li><i class="fa-solid fa-check"></i> Water supply networks, drainage, sewage treatment, &amp; rainwater harvesting</li>
-                <li><i class="fa-solid fa-check"></i> Low-voltage electrical distribution, lighting, &amp; emergency backup</li>
-                <li><i class="fa-solid fa-check"></i> Building Management Systems (BMS) &amp; computational energy modeling</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> HVAC thermal load calculations, chiller systems, &amp; ductwork layout</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Fire detection, sprinkler arrays, hydrants, &amp; clean-agent suppression</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Water supply networks, drainage, sewage treatment, &amp; rainwater harvesting</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Low-voltage electrical distribution, lighting, &amp; emergency backup</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Building Management Systems (BMS) &amp; computational energy modeling</li>
               </ul>
 
               <a href="/contact" class="x-btn x-btn--primary" data-nav>
-                <span>Consult MEPF Leads</span> <i class="fa-solid fa-arrow-right"></i>
+                <span>Consult MEPF Leads</span> <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
               </a>
             </div>
 
             <div class="x-svc-row__media reveal">
-              <img src="/Photos/project-mepf.jpg" alt="MEPF Building Services ARKS IEC">
+              <img src="/Photos/project-mepf.webp" alt="MEPF Building Services ARKS IEC" width="1024" height="1024" loading="lazy" decoding="async">
               <div class="x-svc-row__tag">
-                <i class="fa-solid fa-gears"></i>
+                <i class="fa-solid fa-gears"><svg class="x-icon" aria-hidden="true"><use href="#fa-gears"></use></svg></i>
                 <span>Synchronized Mechanical & Electrical</span>
               </div>
             </div>
@@ -152,22 +142,22 @@ const Services: PageModule = {
               </p>
 
               <ul class="x-checklist">
-                <li><i class="fa-solid fa-check"></i> Vendor bid technical evaluation &amp; contract administration</li>
-                <li><i class="fa-solid fa-check"></i> Primavera / MS Project milestone scheduling &amp; critical path audits</li>
-                <li><i class="fa-solid fa-check"></i> Site QA/QC inspection protocols &amp; HSE compliance supervision</li>
-                <li><i class="fa-solid fa-check"></i> Statutory authority approvals &amp; design compliance liaison</li>
-                <li><i class="fa-solid fa-check"></i> Pre-commissioning validation, punch-list closure, &amp; handover</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Vendor bid technical evaluation &amp; contract administration</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Primavera / MS Project milestone scheduling &amp; critical path audits</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Site QA/QC inspection protocols &amp; HSE compliance supervision</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Statutory authority approvals &amp; design compliance liaison</li>
+                <li><i class="fa-solid fa-check"><svg class="x-icon" aria-hidden="true"><use href="#fa-check"></use></svg></i> Pre-commissioning validation, punch-list closure, &amp; handover</li>
               </ul>
 
               <a href="/contact" class="x-btn x-btn--primary" data-nav>
-                <span>Discuss PMC Engagement</span> <i class="fa-solid fa-arrow-right"></i>
+                <span>Discuss PMC Engagement</span> <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
               </a>
             </div>
 
             <div class="x-svc-row__media reveal">
-              <img src="/Photos/project-pmc.jpg" alt="Project Management Consultancy ARKS IEC">
+              <img src="/Photos/project-pmc.webp" alt="Project Management Consultancy ARKS IEC" width="1024" height="1024" loading="lazy" decoding="async">
               <div class="x-svc-row__tag">
-                <i class="fa-solid fa-chart-line"></i>
+                <i class="fa-solid fa-chart-line"><svg class="x-icon" aria-hidden="true"><use href="#fa-chart-line"></use></svg></i>
                 <span>Zero-Interface Friction PMC</span>
               </div>
             </div>
@@ -189,7 +179,7 @@ const Services: PageModule = {
             </div>
             <div class="x-cta__actions">
               <a href="/contact" class="x-btn x-btn--primary" data-nav>
-                <span>Request Technical Proposal</span> <i class="fa-solid fa-arrow-right"></i>
+                <span>Request Technical Proposal</span> <i class="fa-solid fa-arrow-right"><svg class="x-icon" aria-hidden="true"><use href="#fa-arrow-right"></use></svg></i>
               </a>
               <a href="/projects" class="x-btn x-btn--light" data-nav>
                 <span>Explore Portfolio</span>
