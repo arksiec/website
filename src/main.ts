@@ -185,6 +185,40 @@ function initMobileMenu() {
   });
 }
 
+// ── Floating Scroll To Top Button (Triggered in bottom 20% of page) ──
+function initScrollToTop() {
+  const btn = document.getElementById('scroll-to-top');
+  if (!btn) return;
+
+  const handleScroll = () => {
+    const scrollHeight = document.documentElement.scrollHeight;
+    const clientHeight = window.innerHeight;
+    const scrollable = scrollHeight - clientHeight;
+
+    // Only activate if page has scrollable content
+    if (scrollable > 250) {
+      // User is within the bottom 20% of the document height
+      const reachedBottom20 = (window.scrollY + clientHeight) >= (scrollHeight * 0.80);
+      btn.classList.toggle('visible', reachedBottom20);
+    } else {
+      btn.classList.remove('visible');
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', handleScroll, { passive: true });
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  handleScroll();
+}
+
 // Start real preloader tracking immediately as script runs
 initRealPreloader();
 
@@ -195,4 +229,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initRouter();
   initScrollSpy();
+  initScrollToTop();
 });

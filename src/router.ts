@@ -289,6 +289,7 @@ export async function navigateTo(path: string, pushState = true) {
 
   // Synchronously update page title, meta description, OpenGraph, Twitter, and canonical link
   updatePageMetadata(target);
+  updateActiveNav(target, hash);
 
   const isSamePage = window.location.pathname === target && currentModule !== null;
 
@@ -374,6 +375,7 @@ export async function navigateTo(path: string, pushState = true) {
       initIcons(app);
       initRevealAnimations();
       updateActiveNav(target, hash);
+      window.dispatchEvent(new Event('scroll'));
     });
   } catch (err) {
     console.error('Route error:', err);

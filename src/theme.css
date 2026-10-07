@@ -2225,21 +2225,15 @@ body.is-preloading .x-hero-reborn__discover {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(242, 106, 27, 0.22) 0%, rgba(242, 106, 27, 0.06) 100%);
-  border: 1px solid rgba(242, 106, 27, 0.35);
+  /* background: linear-gradient(135deg, rgba(242, 106, 27, 0.22) 0%, rgba(242, 106, 27, 0.06) 100%); */
+  /* border: 1px solid rgba(242, 106, 27, 0.35); */
   color: var(--x-accent);
   display: grid;
   place-items: center;
-  font-size: 1.25rem;
+  font-size: 2rem;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(242, 106, 27, 0.18);
+  /* box-shadow: 0 4px 12px rgba(242, 106, 27, 0.18); */
   transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
-}
-
-.metric:hover .metric-icon-wrap {
-  transform: scale(1.08);
-  background: var(--x-accent);
-  color: var(--x-white);
 }
 
 .metric-text {
@@ -2396,4 +2390,85 @@ body.is-preloading .x-hero-reborn__discover {
 @keyframes discoverCircleSpin2 {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* ── Back to Top Floating Arrow Button (Bottom 20% Trigger) ── */
+.scroll-top-btn {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(6, 17, 31, 0.85);
+  border: 1px solid rgba(242, 106, 27, 0.4);
+  color: var(--x-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 990;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 28px -6px rgba(6, 17, 31, 0.65), 0 0 16px -2px rgba(242, 106, 27, 0.22);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(18px) scale(0.92);
+  transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              background 0.25s var(--x-ease),
+              border-color 0.25s var(--x-ease),
+              color 0.25s var(--x-ease),
+              box-shadow 0.25s var(--x-ease);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scroll-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.scroll-top-btn:hover {
+  background: var(--x-accent);
+  color: var(--x-white);
+  border-color: var(--x-accent);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 14px 32px -4px rgba(242, 106, 27, 0.55), 0 0 20px rgba(242, 106, 27, 0.35);
+}
+
+.scroll-top-btn:active {
+  transform: translateY(-1px) scale(0.96);
+}
+
+.scroll-top-btn:focus-visible {
+  outline: 2px solid var(--x-accent);
+  outline-offset: 3px;
+}
+
+.scroll-top-icon {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-top-btn:hover .scroll-top-icon {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .scroll-top-btn {
+    right: 20px;
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    width: 44px;
+    height: 44px;
+  }
+  .scroll-top-icon {
+    width: 15px;
+    height: 15px;
+  }
 }
